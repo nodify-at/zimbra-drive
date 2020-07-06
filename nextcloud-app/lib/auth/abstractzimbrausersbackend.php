@@ -208,13 +208,14 @@ abstract class AbstractZimbraUsersBackend extends RetroCompatibleBackend
             {
                 $this->groupManager->createGroup($groupName);
             }
-
+/**
             $targetGroup = $this->groupManager->get($groupName);
             if(!$targetGroup->inGroup($user))
             {
                 $targetGroup->addUser($user);
             }
         }
+        **/
     }
 
 
